@@ -22,7 +22,7 @@ function App() {
     for (let i=0; i< winningPatterns.length;i++){
       const [a,b,c]= winningPatterns[i];
       if (board[a] && board[a] === board[b] && board[a] === board[c]) {
-        return board[a]; // either "X" or "O"
+        return board[a]; 
       }
     }
     return null; 
