@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 
 const Counter = () => {
-  // ✅ useState must be inside the component
   const [count, setCount] = useState(0);
 
   const handleIncrement = () => {
