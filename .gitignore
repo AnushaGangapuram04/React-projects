@@ -1,0 +1,30 @@
+# Claude Code
+.claude/
+
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Build outputs
+dist/
+**/dist/
+build/
+**/build/
+.vite/
+**/.vite/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+
+# Project-specific READMEs
+react-todo-app/README.md
+toggle-switch/README.md
