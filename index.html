@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Projects - Anusha Gangapuram</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .subtitle {
+            text-align: center;
+            color: rgba(255,255,255,0.9);
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            padding: 20px;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            text-decoration: none;
+            color: #333;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        .project-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .project-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #667eea;
+        }
+
+        .project-description {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 3rem;
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 React Projects</h1>
+        <p class="subtitle">A collection of interactive React applications</p>
+
+        <div class="projects-grid">
+            <a href="./counter-app/" class="project-card">
+                <div class="project-icon">🔢</div>
+                <div class="project-title">Counter App</div>
+                <p class="project-description">A simple counter application demonstrating state management and event handling in React.</p>
+            </a>
+
+            <a href="./react-todo-app/" class="project-card">
+                <div class="project-icon">✅</div>
+                <div class="project-title">Todo App</div>
+                <p class="project-description">Task management application with add, delete, and mark complete functionality.</p>
+            </a>
+
+            <a href="./toggle-switch/" class="project-card">
+                <div class="project-icon">🔄</div>
+                <div class="project-title">Toggle Switch</div>
+                <p class="project-description">Interactive toggle switch component with smooth animations and transitions.</p>
+            </a>
+
+            <a href="./tic-tac-toe/fun-game/" class="project-card">
+                <div class="project-icon">🎮</div>
+                <div class="project-title">Tic-Tac-Toe Game</div>
+                <p class="project-description">Classic tic-tac-toe game with win detection and game state management.</p>
+            </a>
+        </div>
+
+        <div class="footer">
+            <p>Built with ❤️ using React & Vite</p>
+            <p>© 2024 <a href="https://github.com/AnushaGangapuram04" target="_blank">Anusha Gangapuram</a></p>
+        </div>
+    </div>
+</body>
+</html>
